@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1200px) {
+  .hero {
+    background: url("/dist/images/hero-image-large.jpg");
+  }
+
   .wrapper {
     width: 100%;
   }
@@ -48,6 +52,12 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .hero {
+    height: 70vh;
+    width: 100%;
+    background: url("/dist/images/hero-image-medium.jpg");
+  }
+
   button.hamburger-menu {
     display: inline-block;
   }
@@ -127,6 +137,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .hero {
+    height: 50vh;
+    background: url("/dist/images/hero-image-small.jpg");
+  }
+
   #wrapper-restaurant {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
