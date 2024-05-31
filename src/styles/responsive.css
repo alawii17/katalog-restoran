@@ -65,6 +65,7 @@
 
   button.hamburger-menu {
     display: inline-block;
+    margin-left: auto;
   }
 
   .logo > img {
@@ -90,7 +91,8 @@
   }
 
   .tampil > ul > li {
-    padding: 10px 20px;
+    margin-top: 10px;
+    padding-top: 20px;
     min-width: 44px;
     min-height: 44px;
     width: 100%;
