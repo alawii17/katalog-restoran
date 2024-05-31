@@ -12,6 +12,10 @@ class navHeader extends HTMLElement {
           <div class="logo">
             <img  tabindex="0" class="lazyload" data-src="./images/logo.png" alt="Delish Food-Logo" />
           </div>
+          <button id="hamburger-menu" class="hamburger-menu">
+          <i class="fa-solid fa-bars icon-bars"></i>
+          <i class="fa-solid fa-xmark icon-close"></i>
+        </button>
           <div id="nav_menu" class="nav_menu">
             <ul>
               <li><a href="#/home" style="min-width: 44px; min-height: 44px;">Home</a></li>
@@ -19,10 +23,6 @@ class navHeader extends HTMLElement {
               <li><a href="https://www.linkedin.com/in/muhammad-alawi-alatas-2b521b218/" style="min-width: 44px; min-height: 44px;">About Us</a></li>
             </ul>
           </div>
-          <button id="hamburger-menu" class="hamburger-menu">
-            <i class="fa-solid fa-bars icon-bars"></i>
-            <i class="fa-solid fa-xmark icon-close"></i>
-          </button>
         </div>
       </nav>
     `;
