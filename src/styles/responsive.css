@@ -24,7 +24,8 @@
   }
   #wrapper-restaurant {
     display: grid;
-    grid-template-columns: 50% 50%;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #wrapper-restaurant-favorite {
@@ -56,6 +57,10 @@
     height: 70vh;
     width: 100%;
     background: url("/dist/images/hero-image-medium.jpg");
+  }
+
+  #main-content {
+    width: 100%;
   }
 
   button.hamburger-menu {
@@ -142,6 +147,10 @@
     background: url("/dist/images/hero-image-small.jpg");
   }
 
+  #main-content {
+    width: 100%;
+  }
+
   #wrapper-restaurant {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -226,10 +235,13 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .wrapper > .restoran_detail_poster {
-    display: flex;
+  .wrapper > .restoran_detail_poster img{
+    display: block;
     justify-items: center;
-    max-width: 270px;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .restoran_detai_info > h3 {
@@ -243,5 +255,46 @@
   .restoran_detai_info > p {
     font-size: 1rem;
     padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  #main-content > .restoran > .wrapper > img {
+    width: 100%;
+  }
+
+  #review-list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+
+.wrapper > .restoran_detail_poster {
+    display: inline-block;
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+  }
+
+  .wrapper > .restoran_detail_title > h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .wrapper > .restoran_detail_poster {
+    display: inline-block;
+    max-width: 150px;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .wrapper > .restoran_detail_poster {
+    max-width: 100px;
+    height: auto;
+    width: 100%;
   }
 }
